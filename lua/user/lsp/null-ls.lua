@@ -14,8 +14,8 @@ null_ls.setup({
     --json
 		formatting.prettier.with({ extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" } }),
     -- formatting.shellharden.with({extra_args ={"--transform"}}),
-    --formatting.shfmt,
-    --diagnostics.shellcheck,
+    formatting.shfmt,
+    diagnostics.shellcheck,
 		--formatting.black.with({ extra_args = { "--fast" } }), --not working
     --python
     formatting.yapf,
